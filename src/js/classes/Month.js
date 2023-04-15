@@ -1,0 +1,1 @@
+export class Month{constructor(s){this.month_id=s,this.earnings=[],this.expenses=[]}}

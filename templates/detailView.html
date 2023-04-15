@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style/fonts/kamedins-style/css/kamedins-fonts.css">
+    <link rel="stylesheet" href="../src/style/base.css">
+    <link rel="stylesheet" href="../src/style/s576.css">
+    <link rel="stylesheet" href="../src/style/s768.css">
+    <link rel="stylesheet" href="../src/style/s992.css">
+    <link rel="stylesheet" href="../src/style/s1200.css">
+    <link rel="stylesheet" href="../src/style/s1400.css">
+    <link rel="stylesheet" href="../src/style/sOver1400.css">
+    <title>Details</title>
+</head>
+<body>
+    <header class="flex-between">
+        <p>powered by <a href="https://eltruhtml.github.io/kamedin" class="clickable" target="_blank">Dev Kamedin</a></p>
+        <div id="language-holder" class="flex-around">
+            <div class="language-icons" id="german-language"></div>
+            <div class="language-icons" id="english-language"></div>
+        </div>
+    </header>
+    <main class="flex-column">
+        <div id="bread-crump-container" class="flex-start">
+            <div class="back-buttons"></div>
+            <h5>Zurück zum Dashboard</h5>
+        </div>
+        <h3 class="underlined flex-item-left">Detailansicht</h3>
+        <h4 class="underlined flex-item-left">Transaktionen</h4>
+        
+        
+        <div id="trans-wrapper" class="box clickable flex-column ">
+            <div id="trans-head" class="trans-head flex-around">
+
+                <h3 id="dPicker-headline">Februar 2023</h3>
+            
+            </div>
+            <div id="trans-body" class="trans-body flex-column col-items-wrapper">
+                <div class="trans-box flex-center">
+                    <div class="trans-sub-holder-left flex-center pos-field">
+                        <div class="trans-big-holder flex-start">
+                            <p id="trans-name">Gehalt</p>
+                        </div>
+                        <div class="trans-small-holder flex-start">
+                            <p id="trans-amount">2413,98€</p>
+                        </div>
+                        <div class="trans-big-holder flex-start">
+                            <p id="trans-date">18.02.2023</p>
+                        </div>
+                        <div class="trans-small-holder flex-start">
+                            <p id="trans-type">Fixbetrag</p>
+                        </div>
+                    </div>
+                    <div class="trans-sub-holder-right flex-center">
+                        <div class="transactions-button-holder flex-center">
+                            <div class="delete-trans-button interface-buttons circle-shapes"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="trans-box flex-center">
+                    <div class="trans-sub-holder-left flex-center neg-field">
+                        <div class="trans-big-holder flex-start">
+                            <p id="trans-name">Energies</p>
+                        </div>
+                        <div class="trans-small-holder flex-start">
+                            <p id="trans-amount">13,38€</p>
+                        </div>
+                        <div class="trans-big-holder flex-start">
+                            <p id="trans-date">22.02.2023</p>
+                        </div>
+                        <div class="trans-small-holder flex-start">
+                            <p id="trans-type">Einzelbetrag</p>
+                        </div>
+                    </div>
+                    <div class="trans-sub-holder-right flex-center">
+                        <div class="transactions-button-holder flex-center">
+                            <div class="delete-trans-button interface-buttons circle-shapes"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="trans-foot"></div>
+        </div>
+    </main>
+    <!-- <script src="../src/js/moneytracker.js" type="module"></script> -->
+</body>
+</html>

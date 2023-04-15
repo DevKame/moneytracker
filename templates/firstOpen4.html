@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style/fonts/kamedins-style/css/kamedins-fonts.css">
+    <link rel="stylesheet" href="../src/style/base.css">
+    <link rel="stylesheet" href="../src/style/s576.css">
+    <link rel="stylesheet" href="../src/style/s768.css">
+    <link rel="stylesheet" href="../src/style/s992.css">
+    <link rel="stylesheet" href="../src/style/s1200.css">
+    <link rel="stylesheet" href="../src/style/s1400.css">
+    <link rel="stylesheet" href="../src/style/sOver1400.css">
+    <title>FirstOpen4</title>
+</head>
+<body>
+    <header class="flex-between">
+        <p>powered by <a href="https://eltruhtml.github.io/kamedin" class="clickable" target="_blank">Dev Kamedin</a></p>
+        <div id="language-holder" class="flex-around">
+            <div class="language-icons" id="german-language"></div>
+            <div class="language-icons" id="english-language"></div>
+        </div>
+    </header>
+    <main class="flex-column">
+        <h2 id="master-headline"><span class="kame-font">Kamedin´s</span> Moneytracker</h2>
+        <div class="text-block flex-column">
+            <p>Mit der weiterführenden Nutzung des Moneytrackers erklärst du dich mit der Datennutzung einverstanden</p>
+        </div>
+        <div class="text-block flex-column">
+            <p>Um den Moneytracker zu nutzen, gib den Namen des deines ersten Tracker Accounts ein</p>
+        </div>
+        <div class="input-block flex-column">
+            <input type="text" id="username-input" class="input-block-tInput clickable" placeholder="Name des Accounts...">
+            <div class="input-int-holder flex-center">
+                <div class="input-int-p-holder flex-start">
+                    <p>Name eingeben</p>
+                </div>
+                <div class="input-int-button-holder flex-between relative">
+                    <div class="secondary-input sec-inside rounded-edges flex-end absolute">
+                        <p>Nochmal</p>
+                    </div>
+                    <div class="input-int-wrapper circle-shapes flex-center relative">
+                        <button class="clickable input-block-button absolute" id="create-new-tracker-account-btn">O K</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../src/js/moneytracker.js" type="module"></script>
+</body>
+</html>

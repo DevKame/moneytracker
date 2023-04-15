@@ -1,0 +1,1 @@
+export class Transaction{constructor(t,i,s,o,e){this.type=t,this.date=i,this.category=s,this.amount=o,this.identifier=e}}export class Multitransaction{constructor(t,i,s,o,e,r){this.type=t,this.due=i,this.category=s,this.amount=o,this.amountPerMonth=e,this.identifier=r}}

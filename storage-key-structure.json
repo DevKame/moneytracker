@@ -1,0 +1,31 @@
+
+{
+    "language": "en",
+    "trackeraccounts":
+    [
+        {
+            "name": "user1",
+            "categories": ["Einkauf", "Gehalt"],
+            "months":
+            [
+                {
+                    "month_id": "feb-2023",
+                    "earnings":
+                    [
+                        
+                    ],
+                    "expenses":
+                    [
+                        {
+                            "type": "expense",
+                            "category": "Einkauf",
+                            "date": "03.03.2023",
+                            "amount": 370
+                        }
+                    ],
+                    "repeatingTransactions": []
+                }
+            ]
+        }
+    ]
+}

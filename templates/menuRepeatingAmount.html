@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style/fonts/kamedins-style/css/kamedins-fonts.css">
+    <link rel="stylesheet" href="../src/style/base.css">
+    <link rel="stylesheet" href="../src/style/s576.css">
+    <link rel="stylesheet" href="../src/style/s768.css">
+    <link rel="stylesheet" href="../src/style/s992.css">
+    <link rel="stylesheet" href="../src/style/s1200.css">
+    <link rel="stylesheet" href="../src/style/s1400.css">
+    <link rel="stylesheet" href="../src/style/sOver1400.css">
+    <title>Repeating Amount</title>
+</head>
+<body>
+    <header class="flex-between">
+        <p>powered by <a href="https://eltruhtml.github.io/kamedin" class="clickable" target="_blank">Dev Kamedin</a></p>
+        <div id="language-holder" class="flex-around">
+            <div class="language-icons" id="german-language"></div>
+            <div class="language-icons" id="english-language"></div>
+        </div>
+    </header>
+    <main class="flex-column">
+        <div id="bread-crump-container" class="flex-start">
+            <div class="back-buttons"></div>
+            <h5>Zurück zum Dashboard</h5>
+        </div>
+        <h3 class="underlined flex-item-left">Laufenden Betrag hinzufügen</h3>
+        <h4 class="underlined flex-item-left">Art</h4>
+
+        <div class="box flex-start">
+            <div class="double-item-container flex-start">
+                <input type="radio" id="output-transaction" class="clickable" name="kind-of-transaction" checked/>
+                <label for="output-transaction" class="clickable">Ausgabe</label>
+            </div>
+
+            <div class="double-item-container flex-start">
+                <input type="radio" id="input-transaction" class="clickable" name="kind-of-transaction"/>
+                <label for="input-transaction" class="clickable">Einnahme</label>
+            </div>
+        </div>
+
+        <h4 class="underlined flex-item-left">Abgerechnet einmal...</h4>
+        
+        <!-- <div class="box">
+            <input id="repeating-transaction-picker" class="repeating-transaction-picker clickable" type="number" min="1" max="31" step="1">
+        </div> -->
+        <div id="regularity-wrapper" class="box flex-column">
+            <div class="box flex-start">
+                <div class="double-item-container flex-start">
+                    <input type="radio" id="monthly-pay" class="clickable" name="regularity-pays" checked/>
+                    <label for="monthly-pay" class="clickable">im Monat</label>
+                </div>
+                <div class="double-item-container flex-start">
+                    <input type="radio" id="weekly-pay" class="clickable" name="regularity-pays"/>
+                    <label for="weekly-pay" class="clickable">in der Woche</label>
+                </div>
+            </div>
+            
+            <div class="box flex-start">
+                <div class="double-item-container flex-start">
+                    <input type="radio" id="quarterly-pay" class="clickable" name="regularity-pays" checked/>
+                    <label for="quarterly-pay" class="clickable">im Quatal</label>
+                </div>
+                <div class="double-item-container flex-start">
+                    <input type="radio" id="hYear-pay" class="clickable" name="regularity-pays"/>
+                    <label for="hYear-pay" class="clickable">im Halbjahr</label>
+                </div>
+            </div>
+            
+            <div class="box flex-start">
+                <div class="double-item-container flex-start">
+                    <input type="radio" id="yearly-pay" class="clickable" name="regularity-pays" checked/>
+                    <label for="yearly-pay" class="clickable">im Jahr</label>
+                </div>
+            </div>
+        </div>
+        
+        <h4 class="underlined flex-item-left">Kategorie</h4>
+
+        <div class="box">
+            <select id="category-picker" class="category-picker clickable flex-start">
+                <option value="groceries" class="clickable">Einkauf</option>
+                <option value="salary" class="clickable">Gehalt</option>
+            </select>
+        </div>
+        
+        <h4 class="underlined flex-item-left">Betrag</h4>
+
+        <div class="input-block flex-column">
+            <input type="text" class="input-block-tInput clickable" id="amount-input" placeholder="Betrag eingeben">
+            <div class="input-int-holder flex-center">
+                <div class="input-int-p-holder flex-start">
+                    <p>Betrag eingeben</p>
+                </div>
+                <div class="input-int-button-holder flex-between relative">
+                    <div class="secondary-input sec-inside rounded-edges flex-end absolute">
+                        <p>Nochmal</p>
+                    </div>
+                    <div class="input-int-wrapper circle-shapes flex-center relative">
+                        <button class="clickable input-block-button absolute" id="create-new-transaction-button">O K</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../src/js/moneytracker.js" type="module"></script>
+</body>
+</html>

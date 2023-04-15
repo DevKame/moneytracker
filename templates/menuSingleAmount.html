@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style/fonts/kamedins-style/css/kamedins-fonts.css">
+    <link rel="stylesheet" href="../src/style/base.css">
+    <link rel="stylesheet" href="../src/style/s576.css">
+    <link rel="stylesheet" href="../src/style/s768.css">
+    <link rel="stylesheet" href="../src/style/s992.css">
+    <link rel="stylesheet" href="../src/style/s1200.css">
+    <link rel="stylesheet" href="../src/style/s1400.css">
+    <link rel="stylesheet" href="../src/style/sOver1400.css">
+    <title>Single Amount</title>
+</head>
+<body>
+    <header class="flex-between">
+        <p>powered by <a href="https://eltruhtml.github.io/kamedin" class="clickable" target="_blank">Dev Kamedin</a></p>
+        <div id="language-holder" class="flex-around">
+            <div class="language-icons" id="german-language"></div>
+            <div class="language-icons" id="english-language"></div>
+        </div>
+    </header>
+    <main class="flex-column">
+        <div id="bread-crump-container" class="flex-start">
+            <div class="back-buttons"></div>
+            <h5>Zurück zum Dashboard</h5>
+        </div>
+        <h3 class="underlined flex-item-left">Einmaligen Betrag hinzufügen</h3>
+        <h4 class="underlined flex-item-left">Art</h4>
+
+        <div class="box flex-center">
+            <div class="double-item-container flex-around">
+                <input type="radio" id="output-transaction" class="clickable" name="kind-of-transaction" checked/>
+                <label for="output-transaction" class="clickable">Ausgabe</label>
+            </div>
+
+            <div class="double-item-container flex-around">
+                <input type="radio" id="input-transaction" class="clickable" name="kind-of-transaction"/>
+                <label for="input-transaction" class="clickable">Einnahme</label>
+            </div>
+        </div>
+
+        <h4 class="underlined flex-item-left">Datum</h4>
+        
+        <div class="box flex-center" id="marker-for-picker">
+            <div class="double-item-container flex-around">
+                <input type="radio" id="set-todays-date" class="clickable" name="date-time-radios" checked/>
+                <label for="set-todays-date" class="clickable">Heute</label>
+            </div>
+
+            <div class="double-item-container flex-around">
+                <input type="radio" id="set-specific-date" class="clickable" name="date-time-radios"/>
+                <label for="set-specific-date" class="clickable">Am</label>
+            </div>
+        </div>
+
+        <div id="date-picker-wrapper" class="box flex-column">
+            <div id="dPicker-head" class="flex-around">
+                <div id="btn-pre-month" class="back-buttons dPicker-head-arrows"></div>
+                <h3 id="dPicker-headline">Februar 2023</h3>
+                <button class="dPicker-todays-date-button">Heute</button>
+                <div id="btn-next-month" class="next-buttons dPicker-head-arrows"></div>
+            </div>
+            <div id="dPicker-body" class="flex-column">
+                <div id="weekday-row" class="flex-center">
+                    <div class="weekday-field flex-center">Mo</div>
+                    <div class="weekday-field flex-center">Di</div>
+                    <div class="weekday-field flex-center">Mi</div>
+                    <div class="weekday-field flex-center">Do</div>
+                    <div class="weekday-field flex-center">Fr</div>
+                    <div class="weekday-field weekend-field flex-center">Sa</div>
+                    <div class="weekday-field weekend-field flex-center">So</div>
+                </div>
+                <div class="week-row flex-center">
+                    <div class="day-field clickable">
+                        <p class="day-field-number"></p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number"></p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number">1</p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number">2</p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number">3</p>
+                    </div>
+                    <div class="day-field clickable weekend-field">
+                        <p class="day-field-number">4</p>
+                    </div>
+                    <div class="day-field clickable weekend-field">
+                        <p class="day-field-number">5</p>
+                    </div>
+                </div>
+                <div class="week-row flex-center">
+                    <div class="day-field clickable">
+                        <p class="day-field-number">6</p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number">7</p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number">8</p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number">9</p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number">10</p>
+                    </div>
+                    <div class="day-field clickable weekend-field">
+                        <p class="day-field-number">11</p>
+                    </div>
+                    <div class="day-field clickable weekend-field">
+                        <p class="day-field-number">12</p>
+                    </div>
+                </div>
+                <div class="week-row flex-center">
+                    <div class="day-field clickable">
+                        <p class="day-field-number">13</p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number">14</p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number">15</p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number">16</p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number">17</p>
+                    </div>
+                    <div class="day-field clickable weekend-field">
+                        <p class="day-field-number">18</p>
+                    </div>
+                    <div class="day-field clickable weekend-field">
+                        <p class="day-field-number">19</p>
+                    </div>
+                </div>
+                <div class="week-row flex-center">
+                    <div class="day-field clickable">
+                        <p class="day-field-number">20</p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number">21</p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number">22</p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number">23</p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number">24</p>
+                    </div>
+                    <div class="day-field clickable weekend-field">
+                        <p class="day-field-number">25</p>
+                    </div>
+                    <div class="day-field clickable weekend-field">
+                        <p class="day-field-number">26</p>
+                    </div>
+                </div>
+                <div class="week-row flex-center">
+                    <div class="day-field clickable">
+                        <p class="day-field-number">27</p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number">28</p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number"></p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number"></p>
+                    </div>
+                    <div class="day-field clickable">
+                        <p class="day-field-number"></p>
+                    </div>
+                    <div class="day-field clickable weekend-field">
+                        <p class="day-field-number"></p>
+                    </div>
+                    <div class="day-field clickable weekend-field">
+                        <p class="day-field-number"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="dPicker-foot"></div>
+        </div>
+        
+        <h4 class="underlined flex-item-left">Kategorie</h4>
+
+        <div class="box">
+            <select id="category-picker" class="category-picker clickable flex-start">
+                <option value="groceries" class="clickable">Einkauf</option>
+                <option value="salary" class="clickable">Gehalt</option>
+            </select>
+        </div>
+        
+        <h4 class="underlined flex-item-left">Betrag</h4>
+
+        <div class="input-block flex-column">
+            <input type="text" class="input-block-tInput clickable" id="amount-input" placeholder="Betrag eingeben">
+            <div class="input-int-holder flex-center">
+                <div class="input-int-p-holder flex-start">
+                    <p>Betrag eingeben</p>
+                </div>
+                <div class="input-int-button-holder flex-between relative">
+                    <div class="secondary-input sec-inside rounded-edges flex-end absolute">
+                        <p>Nochmal</p>
+                    </div>
+                    <div class="input-int-wrapper circle-shapes flex-center relative">
+                        <button class="clickable input-block-button absolute" id="create-new-tracker-account-btn">O K</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../src/js/moneytracker.js" type="module"></script>
+</body>
+</html>

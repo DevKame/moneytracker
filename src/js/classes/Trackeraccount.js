@@ -1,0 +1,1 @@
+export class Trackeraccount{constructor(s,t,n){this.name=s,this.months=[],this.categories=[t,n],this.runningTransactions=[]}}

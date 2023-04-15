@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style/fonts/kamedins-style/css/kamedins-fonts.css">
+    <link rel="stylesheet" href="../src/style/base.css">
+    <link rel="stylesheet" href="../src/style/s576.css">
+    <link rel="stylesheet" href="../src/style/s768.css">
+    <link rel="stylesheet" href="../src/style/s992.css">
+    <link rel="stylesheet" href="../src/style/s1200.css">
+    <link rel="stylesheet" href="../src/style/s1400.css">
+    <link rel="stylesheet" href="../src/style/sOver1400.css">
+    <title>Dashboard Nackt</title>
+</head>
+<body>
+    <header class="flex-between">
+        <p>powered by <a href="https://eltruhtml.github.io/kamedin" class="clickable" target="_blank">Dev Kamedin</a></p>
+        <div id="language-holder" class="flex-around">
+            <div class="language-icons" id="german-language"></div>
+            <div class="language-icons" id="english-language"></div>
+        </div>
+    </header>
+    <main class="flex-column relative">
+        <div id="welcome-headline" class="wel-hl-container">
+            <h3>Guten Morgen, Eldin</h3>
+            <h4>Samstag, 11.02.2023 <span id="cal-week">(8.KW)</span></h4>
+        </div>
+        <div class="text-block flex-column">
+            <p>Für diesen Monat existieren noch keine Daten. Füge unten im Menü Ein- und Ausgaben hinzu</p>
+        </div>
+        <div id="star-menu-container" class="relative">
+
+            <div id="sMenu-master-container" class="sMenu-wrappers sMenu-master-container flex-column not-clicked absolute">
+                <div class="mCon-head flex-center"><p>Menü</p></div>
+                <div class="mCon-body flex-center">
+                    <button id="sMenu-master-button" class="master-buttons buttons circle-shapes not-clicked clickable relative">
+                        <div class="hamburger-stripes absolute"></div>
+                        <div class="hamburger-stripes absolute"></div>
+                        <div class="hamburger-stripes absolute"></div>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="sMenu-single-container" class="sMenu-wrappers sMenu-single-container flex-column not-clicked absolute">
+                <div class="mCon-head flex-center"><p>Einmalig</p></div>
+                <div class="mCon-body flex-center">
+                    <button id="sMenu-single-button" class="master-buttons buttons circle-shapes clickable relative">
+                    </button>
+                </div>
+            </div>
+            
+            <div id="sMenu-repeat-container" class="sMenu-wrappers sMenu-repeat-container flex-column not-clicked absolute">
+                <div class="mCon-head flex-center"><p>Wiederholt</p></div>
+                <div class="mCon-body flex-center">
+                    <button id="sMenu-repeat-button" class="master-buttons buttons circle-shapes clickable relative">
+                    </button>
+                </div>
+            </div>
+            
+            <div id="sMenu-category-container" class="sMenu-wrappers sMenu-category-container flex-column not-clicked absolute">
+                <div class="mCon-head flex-center"><p>Kategorien</p></div>
+                <div class="mCon-body flex-center">
+                    <button id="sMenu-category-button" class="master-buttons buttons circle-shapes clickable relative">
+                    </button>
+                </div>
+            </div>
+
+            
+            <div id="sMenu-user-container" class="sMenu-wrappers sMenu-user-container flex-column not-clicked absolute">
+                <div class="mCon-head flex-center"><p>Accounts</p></div>
+                <div class="mCon-body flex-center">
+                    <button id="sMenu-user-button" class="master-buttons buttons circle-shapes clickable relative">
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="../src/js/moneytracker.js" type="module"></script>
+</body>
+</html>

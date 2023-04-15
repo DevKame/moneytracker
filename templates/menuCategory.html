@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style/fonts/kamedins-style/css/kamedins-fonts.css">
+    <link rel="stylesheet" href="../src/style/base.css">
+    <link rel="stylesheet" href="../src/style/s576.css">
+    <link rel="stylesheet" href="../src/style/s768.css">
+    <link rel="stylesheet" href="../src/style/s992.css">
+    <link rel="stylesheet" href="../src/style/s1200.css">
+    <link rel="stylesheet" href="../src/style/s1400.css">
+    <link rel="stylesheet" href="../src/style/sOver1400.css">
+    <title>Category</title>
+</head>
+<body>
+    <header class="flex-between">
+        <p>powered by <a href="https://eltruhtml.github.io/kamedin" class="clickable" target="_blank">Dev Kamedin</a></p>
+        <div id="language-holder" class="flex-around">
+            <div class="language-icons" id="german-language"></div>
+            <div class="language-icons" id="english-language"></div>
+        </div>
+    </header>
+    <main class="flex-column">
+        <div id="bread-crump-container" class="flex-start">
+            <div class="back-buttons"></div>
+            <h5>Zurück zum Dashboard</h5>
+        </div>
+        <h3 class="underlined flex-item-left">Kategorien</h3>
+        
+        <div class="text-block flex-column">
+            <p>Indem du deinen Ausgaben Kategorien zuweist, ermöglichst du dir einen besseren Überblick. Lösche oder erstelle hier neue Kategorien</p>
+        </div>
+        <h4 class="underlined flex-item-left">Übersicht</h4>
+
+        <div id="category-wrapper" class="col-items-wrapper box clickable flex-column">
+            <div class="category-box flex-between">
+                <div class="category-p-holder neg-field flex-start">
+                    <p>Einkauf</p>
+                </div>
+                <div class="category-button-holder flex-center">
+                    <div class="delete-cat-button interface-buttons circle-shapes"></div>
+                </div>
+            </div>
+            <div class="category-box flex-between">
+                <div class="category-p-holder pos-field flex-start">
+                    <p>Gehalt</p>
+                </div>
+                <div class="category-button-holder flex-center">
+                    <div class="delete-cat-button interface-buttons circle-shapes"></div>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="underlined flex-item-left">Neue Kategorie</h4>
+
+        <div class="input-block flex-column">
+            <input type="text" id="catName-input" class="input-block-tInput clickable" placeholder="Kategorienname...">
+            <div class="input-int-holder flex-center">
+                <div class="input-int-p-holder flex-start">
+                    <p>Namen eingeben</p>
+                </div>
+                <div class="input-int-button-holder flex-between relative">
+                    <div class="secondary-input sec-inside rounded-edges flex-end absolute">
+                        <p>Nochmal</p>
+                    </div>
+                    <div class="input-int-wrapper circle-shapes flex-center relative">
+                        <button class="clickable input-block-button absolute" id="create-new-category-account-btn">O K</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- <script src="../src/js/moneytracker.js" type="module"></script> -->
+</body>
+</html>
